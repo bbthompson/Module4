@@ -1,0 +1,188 @@
+/* 
+    COLOR PALETTE 
+
+    #ECEBE4 Alabaster
+    #030346 Dark Blue
+    #247BA0 Cerulean
+    #BA836C Burnt Orange
+    #BEA078 Pale Orange
+    
+*/
+
+/* GLOBAL STYLES 
+------------------------------------*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* set default to 10px */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #ECEBE4;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #030346;
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+h1, h2, h3 {
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    margin: 0;    
+}
+
+h1 {
+    font-size: 6rem;
+    line-height: 0.9;
+    text-shadow: 2px 2px 4px #247BA0;
+}
+
+h2, h3 {
+    text-shadow: 1px 1px 2px #247BA0;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+/* links */
+a {
+    color: #247BA0;
+}
+
+a:hover {
+    color: #BEA078;
+    text-decoration: none;
+}
+
+.btn {
+    background: #247BA0;
+    color: #ECEBE4;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 7px;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    border-radius: 4px;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
+
+
+/* RESUME
+------------------------------------*/
+.resume header::before {
+    background: url(../images/norbert-levajsics-unsplash.jpg) center;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 375px;
+}
+
+.resume-section {
+    margin-bottom: 50px;
+}
+
+.resume-section h2 {
+    border-bottom: 2px dashed #BA836C;
+}
+
+.download-link {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    font-size: 1.5rem;
+}
+
+/* Profile
+------------------------------------*/
+
+/* Projects
+------------------------------------*/
+
+.project-item {
+    display: flow-root;
+    margin: 30px 0;
+}
+
+.project-item img {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+
+/* Work Experience
+------------------------------------*/
+.work-item {
+    margin: 30px 0;
+    display: flow-root;
+}
+
+.work-details {
+    float: left;
+    margin-right: 20px;
+    width: 25%;
+}
+
+.work-summary {
+    float: right;
+    width: 70%;
+}
+
+.work-details p {
+    margin: 0;
+}
+
+.work-summary p:first-child {
+    margin-top: 0;
+}
+
+/* Education
+------------------------------------*/
+.education-item {
+    margin: 30px 0;
+}
+
+.education-item p {
+    margin: 0;
+}
+
+/* FOOTER
+------------------------------------*/
+footer {
+    background: #BA836C;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+
+.socials li {
+    display: inline-block;
+}
+
+.socials img {
+    width: 32px;
+}
